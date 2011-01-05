@@ -60,6 +60,7 @@ GEM
       abstract (>= 1.0.0)
     ffi (0.6.3)
       rake (>= 0.8.7)
+    flutie (1.1.4)
     gherkin (2.3.3)
       json (~> 1.4.6)
     haml (3.0.25)
@@ -135,6 +136,7 @@ DEPENDENCIES
   capybara
   cucumber-rails
   devise
+  flutie (~> 1.1)
   haml (>= 3.0.0)
   haml-rails
   rails (= 3.0.3)

@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Serial number:
+  = @device.serial_number
+%p
+  %b Model number:
+  = @device.model_number
+%p
+  %b Type:
+  = @device.type
+%p
+  %b Tag:
+  = @device.tag
+%p
+  %b User:
+  = @device.user_id
+%p
+  %b Pool:
+  = @device.pool_id
+
+= link_to 'Edit', edit_device_path(@device)
+\|
+= link_to 'Back', devices_path

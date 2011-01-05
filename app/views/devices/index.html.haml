@@ -1,0 +1,29 @@
+%h1 Listing devices
+
+%table
+  %tr
+    %th Serial number
+    %th Model number
+    %th Type
+    %th Tag
+    %th User
+    %th Pool
+    %th
+    %th
+    %th
+
+  - @devices.each do |device|
+    %tr
+      %td= device.serial_number
+      %td= device.model_number
+      %td= device.type
+      %td= device.tag
+      %td= device.user_id
+      %td= device.pool_id
+      %td= link_to 'Show', device
+      %td= link_to 'Edit', edit_device_path(device)
+      %td= link_to 'Destroy', device, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Device', new_device_path

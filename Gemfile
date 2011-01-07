@@ -36,3 +36,4 @@ gem "devise"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "flutie", "~> 1.1"
+gem 'launchy'

@@ -13,7 +13,7 @@ module NavigationHelpers
     when /the new device page/
       '/device/new'
       when /the device page/
-        '/device'
+        '/'
 
     when /the new styleguide page/
       new_styleguide_path

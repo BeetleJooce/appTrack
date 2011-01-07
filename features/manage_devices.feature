@@ -5,13 +5,8 @@ Feature: Manage devices
 
   Scenario: View all Devices
     Given I am on the device page
-    Then I should see "Serial number"
+    Then I should see "AppTrack" within "title"
 
-  
-  Scenario: Register new device
-    Given I am on the new device page
-    And I click "New device"
-    Then I should see "Save"
 
   # Rails generates Delete links that use Javascript to pop up a confirmation
   # dialog and then do a HTTP POST request (emulated DELETE request).
